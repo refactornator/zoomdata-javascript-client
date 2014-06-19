@@ -17,11 +17,55 @@
         <!-- endbuild -->
     </head>
     <body>
+        <!-- IE 9 Fix -->
+        <script>
+            WEB_SOCKET_DEBUG = true;
+            WEB_SOCKET_FORCE_FLASH = true;
+            WEB_SOCKET_SWF_LOCATION = "/WebSocketMain.swf";
+        </script>
+
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="visualization"></div>
+        <h2>Horizontal Bars</h2>
+        <div class="visualization" id="horizontal_bars"></div>
+        
+        <h2>Vertical Bars</h2>
+        <div class="visualization" id="vertical_bars"></div>
+        
+        <h2>Side by Side Bars</h2>
+        <div class="visualization" id="side_by_side_bars"></div>
+        
+        <h2>Stacked Bars</h2>
+        <div class="visualization" id="stacked_bars"></div>
+        
+        <h2>Multi-Metric Bars</h2>
+        <div class="visualization" id="multi_metric_bars"></div>
+        
+        <h2>Trend</h2>
+        <div class="visualization" id="trend"></div>
+        
+        <h2>Multi-Metric Trend</h2>
+        <div class="visualization" id="multi_metric_trend"></div>
+        
+        <h2>Pie</h2>
+        <div class="visualization" id="pie"></div>
+        
+        <h2>Pivot Table</h2>
+        <div class="visualization" id="pivot_table"></div>
+        
+        <h2>Heatmap</h2>
+        <div class="visualization" id="heatmap"></div>
+        
+        <h2>Zoomable Map</h2>
+        <div class="visualization" id="zoomable_map"></div>
+        
+        <h2>Bubbles</h2>
+        <div class="visualization" id="bubbles"></div>
+        
+        <h2>Word Cloud</h2>
+        <div class="visualization" id="word_cloud"></div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -30,6 +74,11 @@
         <script src="../bower_components/backbone/backbone.js"></script>
         <script src="../bower_components/jstz-detect/jstz.js"></script>
         <script src="../bower_components/requirejs/require.js"></script>
+        <!-- Start IE 9 Fix -->
+        <script src="../bower_components/web-socket-js/swfobject.js"></script>
+        <script src="../bower_components/web-socket-js/web_socket.js"></script>\
+        <!-- End IE 9 Fix -->
+        <script src="scripts/jquery.numberformatter-1.2.3.js"></script>
         <script src="scripts/zoomdata-standalone.min.js"></script>
         <!-- endbower -->
         <!-- endbuild -->

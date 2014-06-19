@@ -5,7 +5,8 @@
     "jquery": "~1.11.0",
     "backbone": "~1.1.2",
     "jstz-detect": "~1.0.5",
-    "requirejs": "~2.1.14"
+    "requirejs": "~2.1.14",
+    "web-socket-js": "~1.0.2"
   },
   "devDependencies": {}
 }

@@ -10,9 +10,9 @@ body {
     color: #333;
 }
 
-#visualization {
-    width: 80%;
-    height: 80%;
+.visualization {
+    width: 95%;
+    height: 50%;
     margin: auto;
     position: relative;
 }
